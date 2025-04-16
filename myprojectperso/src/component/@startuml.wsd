@@ -1,0 +1,56 @@
+@startuml
+class Examen {
+  +String matière
+  +String niveauScolaire
+  +String chapitre
+  +String typeExamen
+  +int duréeMinutes
+  +String langue
+  +int nombreQuestions
+  +String difficulté
+  +List<String> typesQuestions
+  +String contenu
+  +Date dateCréation
+  +sauvegarderLocalement()
+  +chargerDepuisStockage()
+}
+
+class Feedback {
+  +String témoignage
+  +String auteur
+  +String rôle
+  +String action (export/print)
+  +Date date
+  +sauvegarderFeedback()
+  +récupérerTousFeedbacks()
+}
+
+class GénérateurExamens {
+  +générerExamen(data: Object): Promise<Examen>
+  +convertirTexteEnJSON(texte: String): Object
+}
+
+class FormulaireExamen {
+  +Object données
+  +valider(): Boolean
+  +soumettre(): Promise<Examen>
+}
+
+class PageAccueil {
+  +List<Feedback> témoignages
+  +chargerTémoignages()
+}
+
+class AperçuExamen {
+  -Examen examenActuel
+  +modifierExamen()
+  +sauvegarderExamen()
+  +exporterExamen()
+  +imprimerExamen()
+}
+
+GénérateurExamens --> Examen
+FormulaireExamen --> GénérateurExamens
+PageAccueil --> Feedback
+AperçuExamen --> Examen
+@enduml
