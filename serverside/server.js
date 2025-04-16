@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const serverless = require('serverless-http');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const cors = require('cors');
 
@@ -174,3 +175,5 @@ function convertTextToJson(text) {
     ];
     return { "sections": sections };
 }
+module.exports.handler = serverless(app);
+
