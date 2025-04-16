@@ -174,6 +174,3 @@ function convertTextToJson(text) {
     ];
     return { "sections": sections };
 }
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
