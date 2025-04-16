@@ -68,7 +68,7 @@ function ExamGenerationForm() {
         const progressInterval = simulateProgress();
 
         try {
-            const response = await fetch('http://localhost:5000/generate-exam', {
+            const response = await fetch('https://ai-exam-api.vercel.app/generate-exam', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
