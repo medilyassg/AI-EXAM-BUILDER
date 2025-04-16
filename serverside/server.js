@@ -11,6 +11,7 @@ app.use(cors(
     {
         origin:["ai-exam-client.vercel.app"],
         methods:['POST','GET'],
+        credentials:true
         
     }
 ));
