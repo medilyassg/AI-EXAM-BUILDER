@@ -6,7 +6,13 @@ const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors(
+    {
+        origin:["ai-exam-client.vercel.app"],
+        methods:['POST','GET'],
+        
+    }
+));
 app.use(express.json()); // To parse JSON request bodies
 
 app.post('/generate-exam', async (req, res) => {
