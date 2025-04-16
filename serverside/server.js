@@ -15,6 +15,10 @@ app.use(cors(
 ));
 app.use(express.json()); // To parse JSON request bodies
 
+app.get('/', (req, res) => {
+  res.send('Hello');
+});
+
 app.post('/generate-exam', async (req, res) => {
     const { formData } = req.body;
 
