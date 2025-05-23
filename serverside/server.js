@@ -170,7 +170,7 @@ function convertTextToJson(text) {
     return { "sections": sections };
 }
 // module.exports.handler = serverless(app);
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server running`);
+  });
 
