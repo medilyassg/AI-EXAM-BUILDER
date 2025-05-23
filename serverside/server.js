@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+// const serverless = require('serverless-http');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const cors = require('cors');
 
@@ -8,6 +9,10 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json()); // To parse JSON request bodies
+
+app.get('/', (req, res) => {
+  res.send('Hello');
+});
 
 app.post('/generate-exam', async (req, res) => {
     const { formData } = req.body;
