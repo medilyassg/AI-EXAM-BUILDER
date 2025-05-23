@@ -93,6 +93,7 @@ function ExamGenerationForm() {
             
             if (result.examJson) {
                 toast.success('Examen généré avec succès!');
+                localStorage.removeItem('examFormData');
                 setTimeout(() => {
                     navigate('/exam-preview', { state: { examData: result.examJson } });
                 }, 1500);
