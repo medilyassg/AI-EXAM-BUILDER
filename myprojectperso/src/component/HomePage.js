@@ -89,7 +89,7 @@ const [testimonials, setTestimonials] = React.useState(() => {
     const savedFeedbacks = localStorage.getItem('feedbacks');
     return savedFeedbacks ? JSON.parse(savedFeedbacks) : [
       {
-        quote: "AI Exam Builder m'a fait gagner un temps précieux dans la préparation de mes évaluations. Un outil indispensable pour tout enseignant moderne!",
+        quote: "ExamenFutur  m'a fait gagner un temps précieux dans la préparation de mes évaluations. Un outil indispensable pour tout enseignant moderne!",
         author: "Prof. Sophie Martin",
         role: "Enseignante de Mathématiques, Lycée Descartes"
       },
@@ -190,7 +190,7 @@ const [testimonials, setTestimonials] = React.useState(() => {
                     <motion.div variants={staggerItem} className="text-center mb-16">
                         <h2 className="text-4xl font-bold text-white mb-4">Une Solution Complète pour les Enseignants</h2>
                         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                            AI Exam Builder combine puissance technologique et simplicité d'utilisation pour votre flux de travail pédagogique
+                            ExamenFutur  combine puissance technologique et simplicité d'utilisation pour votre flux de travail pédagogique
                         </p>
                     </motion.div>
                     
@@ -281,7 +281,7 @@ const [testimonials, setTestimonials] = React.useState(() => {
         <motion.div variants={staggerItem} className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">Témoignages</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Ce que nos utilisateurs disent de AI Exam Builder
+                Ce que nos utilisateurs disent de ExamenFutur 
             </p>
         </motion.div>
         
@@ -326,7 +326,7 @@ const [testimonials, setTestimonials] = React.useState(() => {
         ) : (
             <div className="text-center py-12">
                 <p className="text-gray-400 text-lg">
-                    Soyez le premier à partager votre expérience avec AI Exam Builder!
+                    Soyez le premier à partager votre expérience avec ExamenFutur !
                 </p>
             </div>
         )}
@@ -344,7 +344,7 @@ const [testimonials, setTestimonials] = React.useState(() => {
                 <div className="container mx-auto px-6 text-center">
                     <h2 className="text-4xl font-bold mb-6">Prêt à Transformer Votre Enseignement?</h2>
                     <p className="text-xl mb-8 max-w-3xl mx-auto text-blue-100">
-                        Rejoignez la communauté d'enseignants innovants qui utilisent AI Exam Builder pour gagner du temps et améliorer leurs évaluations.
+                        Rejoignez la communauté d'enseignants innovants qui utilisent ExamenFutur  pour gagner du temps et améliorer leurs évaluations.
                     </p>
                     <motion.div
     whileHover={{ scale: 1.05 }}
@@ -366,7 +366,7 @@ const [testimonials, setTestimonials] = React.useState(() => {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         <div>
-                            <h3 className="text-white text-lg font-semibold mb-4">AI Exam Builder</h3>
+                            <h3 className="text-white text-lg font-semibold mb-4">ExamenFutur </h3>
                             <p className="mb-4">L'outil ultime pour les enseignants modernes</p>
                             <p>Projet encadré par Mme NAJOUA HRICH</p>
                         </div>
@@ -386,7 +386,7 @@ const [testimonials, setTestimonials] = React.useState(() => {
                         </div>
                     </div>
                     <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-                        <p>© 2024 AI Exam Builder. Tous droits réservés.</p>
+                        <p>© 2024 ExamenFutur . Tous droits réservés.</p>
                     </div>
                 </div>
             </footer>

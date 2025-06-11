@@ -185,7 +185,7 @@ function ExamGenerationForm() {
             <header className="bg-gray-800 py-4 border-b border-gray-700">
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     <Link to="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400">
-                        AI Exam Builder
+                        ExamenFutur 
                     </Link>
                     <nav>
                         <ul className="flex space-x-6">
@@ -314,7 +314,7 @@ function ExamGenerationForm() {
 
             <footer className="bg-gray-800 text-gray-400 py-4 border-t border-gray-700">
                 <div className="container mx-auto px-6 text-center text-sm">
-                    <p>© {new Date().getFullYear()} AI Exam Builder. Tous droits réservés.</p>
+                    <p>© {new Date().getFullYear()} ExamenFutur . Tous droits réservés.</p>
                 </div>
             </footer>
         </div>
